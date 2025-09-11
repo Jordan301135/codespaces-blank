@@ -11,7 +11,7 @@ print('Michael Jeffery Jordan')
 # SPECIAL NOTE: the newly inputted data
 # ALWAYS be treated as a STRING.
 
-#name=input('Waht is your name')
+name=input('Waht is your name')
 
 # String concatenation is where you can combine 2 or more strings
 # together using the plus symbol
