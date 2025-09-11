@@ -32,3 +32,12 @@ def math():
     print(int(a)+b)
 
 math
+
+# create a function that will calculate 2 numbers
+# with different arithmetic operators
+def calculate():
+    numx = input('please enter a number:')
+    numy = input('please enter another number')
+    print(numx, numy)
+
+calculate()
