@@ -57,3 +57,6 @@ print(hero.is_alive())          # True
 print(hero.attack(5))           # Uses arithmetic and comparison
 print(hero.heal(20))            # Uses parameter and arithmetic
 print(hero.is_alive())          # Conditional check
+
+
+character1 = GameCharacter("Sung Jin Woo", 20000, )
