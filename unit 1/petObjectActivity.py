@@ -26,7 +26,5 @@ class Pets_Contructor:
 
 
 pet_1 = Pets_Contructor('Brandon', 'dog', 4, 'black')
-pet_2 = Pets_Contructor('Slime', 'Snake', 6, 'white')
-pet_3 = Pets_Contructor('Mittenz','Cat', 7, 'Black and Grey')
-
-pet_1.wildness(0)
+pet_2 = Pets_Contructor('Slime', 'snake', 6, 'white')
+pet_3 = Pets_Contructor('Mittenz','cat', 7, 'Black and Grey')
