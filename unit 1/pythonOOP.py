@@ -35,26 +35,24 @@ apple_2 = computers("apple m4", "white", 10.00, 320, True, True, 80, 'm4')
 
 
 
-class Phones:
-   def __init__(self, storage, carrier, size, color, camera, name, warrenty, price, brand):
-      self.storage = storage
-      self.carrier = carrier
-      self.size = size
-      self.color = color
-      self.camera = camera
-      self.name = name
-      self.warrenty = warrenty
-      self.price = price
-      self.brand = brand
+# class Phones:
+#    def __init__(self, storage, carrier, size, color, camera, name, warrenty, price, brand):
+#       self.storage = storage
+#       self.carrier = carrier
+#       self.size = size
+#       self.color = color
+#       self.camera = camera
+#       self.name = name
+#       self.warrenty = warrenty
+#       self.price = price
+#       self.brand = brand
+
 # phone1 = Phones(16,'att',13.00,'yellow',False, 'brickPro' False, 300.00, 'brick')
 # phone2 = Phones(32,'att',7.00,'yellow',False, 'brick' False, 100.00, 'brick')
-class MyCareer:
+class NBA2KMyCareer:
    def __init__(self, Finshing, Shooting, Playmaking, Defense, Rebounding):
-    self.Finishing = Finshing
-    self.Shooting = Shooting
-    self.Playmaking = Playmaking
-    self.Defense = Defense
-    self.Reboundindg = Rebounding
-
-MyCareer1 = (99, 99, 99, 99, 99,)
-
+        self.Finishing = Finshing
+        self.Shooting = Shooting
+        self.Playmaking = Playmaking
+        self.Defense = Defense
+        self.Reboundindg = Rebounding
