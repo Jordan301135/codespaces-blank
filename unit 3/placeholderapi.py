@@ -19,19 +19,33 @@ import json
 # response = requests.get(education)
 
 # print(response.json())
+def pokedex():
+   search = input("Would you you like to find a pokemon? ") 
+   while search == 'y':
+    pokename = input("please enter a pokemone name ")
+    url = 'https://pokeapi.co/api/v2/pokemon/'+pokename+"/"
 
-# url = 'https://pokeapi.co/api/v2/ability/'
+    response = requests.get(url)
 
-# response = requests.get(url)
+    # print(response)
+    # print(response.json())
 
+    if response.status_code == 200:
+        data= response.json()
 
-# print(response.json())
+        filtered_data = {
+            "name" : data["name"],
+            "height" : data["height"],
+            "weight" : data["weight"],
+            "types": data["types"],
+            "abilities": [ability["ability"]["name"] for ability in data ["abilities"]],
+        }
 
+        print(filtered_data)
+        search = input("Would you like to find another pokemon? ")
 
-if response.status_code == 200:
-    data = response.json()
+    else:
+        print("data not found")
+        print(response.status_code)
 
-    filtered_data = {
-    "name" : data{"name"}
-    "height:" data{"height"}
-    "weight:"
+pokedex()
