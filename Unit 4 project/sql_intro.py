@@ -27,15 +27,16 @@ cursor.execute('''
 
 cursor.execute('''
                INSERT INTO gameSales (name, platform, developer, price, genre, total_price)
-               VALUES ('Resident Evil', 'Xbox', 'Capcom', 80, 'horror', 800000000)
+               VALUES ('Naruto X Boruto Ultimate Ninja STORM ', 'PS4', 'CyberConnect2', 120, 'adventure/fighting', 120000000)
                ''')
                
 
 
 
 # cursor.execute('''
-#                INSERT INTO gameSales (name, platform, developer, price, genre, total_price)
-#                VALUES ('Super Smash Bros Ultimate', 'Nintendo Switch', 'Bandai Namco Studios', 25, 'Fighting', 36240000)
+#                UPDATE gameSales
+#                SET platform = 'PS4'
+#                WHERE name  = 'Naruto X Boruto Ultimate Ninja STORM'
 #                ''')
 
 
@@ -43,3 +44,4 @@ cursor.execute('''
 
 connect.commit()
 connect.close()
+
