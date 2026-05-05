@@ -21,12 +21,13 @@
 # 1 method must do some type of conditional (if/else) logic. 
 
 class GameCharacter:
-    def __init__(self, name, health, attack_power, defense, level):
-        self.name = name           # string
+    def __init__(self, name, health, attack_power, defense, level, form):
+        self.name = name           # str
         self.health = health       # int
         self.attack_power = attack_power  # int
         self.defense = defense     # int
         self.level = level         # int
+        self.form = form           # str
 
     # 1) Method that does an arithmetic operation with data
     def attack(self, enemy_defense):
@@ -59,4 +60,5 @@ print(hero.heal(20))            # Uses parameter and arithmetic
 print(hero.is_alive())          # Conditional check
 
 
-character1 = GameCharacter("Sung Jin Woo", 20000, )
+character1 = GameCharacter("Sung Jin Woo", 66000000, 11000000, 22000000, 200, "Sung Jin Woo's Evolution")
+character2 = GameCharacter("Broly", 40000000000, 32000000000, 32000000000, 4200000000000, "Legendary Super Sayian 3")

@@ -17,6 +17,6 @@ import requests
 
 # print(countryData.json())
 
-SouthernCountry = requests.get("https://restcountries.com/v3.1/name/Guyana")
+NorthernCountry = requests.get("https://restcountries.com/v3.1/name/United Kingdom")
 
-print(SouthernCountry.json())
+print(NorthernCountry.json())

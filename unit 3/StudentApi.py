@@ -2,36 +2,69 @@ import requests
 
 query = 'https://rickandmortyapi.com/api/character/1'
 
-response = requests.get(query)
+res = requests.get(query)
 
-# print(response)
-# print(response.json())
+# print(res.status_code)
+# print(res.json())
+data = res.json()
 
 
-def RickandMorty():
-   search = input("Would you you like to find a Rick and Morty? ") 
-   while search == 'y':
-    rickandmortycharacter = input("please enter a Rick and Morty name ")
-    url = 'https://rickandmortyapi.com/api/character/1,2,4'+rickandmortycharacter+"/"
+url ='https://rickandmortyapi.com/api/character/1'
+res = requests.get(url)
+status = res.status_code
+#print(res.status_code)
+#print(res.json())
 
-    response = requests.get(url)
+if status == 200:
+    data = res.json()
 
-    # print(response)
-    # print(response.json())
+    filterData = {
+        "name": data["name"],
+        "status":data["status"],
+        "image":data["image"],
+    }
 
-    if response.status_code == 200:
-        data= response.json()
+    print(filterData)
+else:
+    print("Something went wrong")
+    print(res.status_code)
 
-        filtered_data = {
-           "id": data[1,2,4],
-            "name" : data["name"],
-        }
+url ='https://rickandmortyapi.com/api/character/2'
+res = requests.get(url)
+status = res.status_code
+#print(res.status_code)
+#print(res.json())
 
-        print(filtered_data)
-        search = input("Would you like to find another pokemon? ")
+if status == 200:
+    data = res.json()
 
-    else:
-        print("data not found")
-        print(response.status_code)
+    filterData = {
+        "name": data["name"],
+        "status":data["status"],
+        "image":data["image"],
+    }
 
-RickandMorty()
+    print(filterData)
+else:
+    print("Something went wrong")
+    print(res.status_code)
+
+url ='https://rickandmortyapi.com/api/character/83'
+res = requests.get(url)
+status = res.status_code
+#print(res.status_code)
+#print(res.json())
+
+if status == 200:
+    data = res.json()
+
+    filterData = {
+        "name": data["name"],
+        "status":data["status"],
+        "image":data["image"],
+    }
+
+    print(filterData)
+else:
+    print("Something went wrong")
+    print(res.status_code)
